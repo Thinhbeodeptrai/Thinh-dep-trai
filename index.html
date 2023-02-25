@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey</title>
+</head>
+<body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Please fill out the form</p>
+    <form id="survey-form" method="post" action="https://survey-form.freecodecamp.rocks/">
+      <fieldset>
+        <label id="name-label" for="name">Name
+          <input class="inline"id="name"  name="name" type="text" placeholder="Enter your name" required>
+        </lable>
+        <label id="email-label"for="email">Email
+          <input class="inline" id="email" name="email" type= "email" placeholder="Enter your email" required >
+        </lable>
+        <label id="number-label" for="age">Age
+          <input class="inline" name="age" id="number" placeholder="Age" type="number" min="18" max="30" required>
+        </lable>
+        <label>How do u think about Thinhdeptrai?
+        <select id="dropdown" class="inline">
+          <option value="1">select an option</option>
+          <option value="1">Brave</option> 
+          <option value="1">Handsome</option> 
+          <option  value="1">Cheerful</option> 
+          <option value="1">Easy-going</option> 
+          <option value="1">Big dick</option> 
+        </select>
+        </lable>
+      </fieldset>
+      <fieldset>
+        Would you recommend Thinhdeptrai to a  girl friend?
+        <label for="definitely">
+          <input type="radio" id="definitely" name="type" value="definitely">Definitely
+        </label> 
+        <label for="maybe">
+          <input type="radio" id="maybe" name="type" value="maybe">Maybe
+        </label> 
+        <label for="not-sure">
+          <input type="radio" id="not-sure" name="type" value="not-sure">Not sure 
+        </label> 
+      </fieldset>
+      <fieldset>
+        <label for="favorite">
+          Do you wanna suck Thinh's dick?
+         <select class="inline" id="favorite">
+           <option value="a">Select an option</option>
+           <option value="b">có</option>
+           <option value="c">có</option>
+           <option value="d">yes,sure chắc chắn rồi!</option>
+         </select> 
+        </label>
+        </fieldset>
+        <fieldset>
+        <label for="checkbox">
+          How would you like Thinh to improve? (Check all that apply)
+        <div> <input  type="checkbox" id="checkbox" value="front-end-projects">skills</div>
+        <div>
+          <input type="checkbox" id="checkbox" value="back-end-projects">life styles</div>
+       <div><input type="checkbox" id="checkbox" value="data-visualization"> anything
+        </div>
+        <label for="suggestions">
+          Any comments or suggestions?
+          <textarea id="suggestions" rows="1" cols="20" placeholder="Comment here..."></textarea>
+        </label>
+      </fieldset>
+      <input type="submit" id="submit" value="Submit">
+    </form>
+  </body> 
+
+</html>
